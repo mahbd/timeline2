@@ -44,10 +44,10 @@ export default function OutlinedTimeline() {
                 items.map((item, index) => (
                     <TimelineItem key={index}>
                         <TimelineSeparator>
-                            <TimelineDot variant="outlined" color={item.color}/>
-                            {index !== items.length - 1 && <TimelineConnector/>}
+                            <TimelineDot style={{ width: '5px', height: '5px', borderWidth: '5px' }} variant="outlined" color={item.color}/>
+                            {index !== items.length - 1 && <TimelineConnector style={{ backgroundColor: 'red', height: '50px', width: '5px' }}/>}
                         </TimelineSeparator>
-                        <TimelineContent>{item.content}</TimelineContent>
+                        <TimelineContent color={'#f12'}>{item.content}</TimelineContent>
                     </TimelineItem>
                 ))
             }

@@ -9,7 +9,10 @@ const Form = ({onSubmit}) => {
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <input id={"label"} type="text"/>
+                <label>Text<input id={"label"} type="text"/></label>
+                <br />
+                <lebel>Index<input id={"index"} type="number"/></lebel>
+                <br />
                 <input type="submit" value={"Submit"}/>
             </form>
         </div>
